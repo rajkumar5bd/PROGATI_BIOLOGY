@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom styles for Google Model Viewer Web Component */
+model-viewer {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+  --poster-color: transparent;
+  outline: none;
+}
+
+model-viewer::part(default-ar-button) {
+  display: none; /* We provide custom styled Bengali AR buttons with device feedback */
+}
+
+/* Custom interactive hotspot styling for 3D and 2D diagrams */
+.hotspot-badge {
+  transform: translate(-50%, -50%);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hotspot-badge:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}

@@ -1,0 +1,879 @@
+# MASTER PROMPT — PROGATI COACHING CENTER SSC BIOLOGY LEARNING WEBSITE
+
+## 1. YOUR ROLE AND PRIMARY OBJECTIVE
+
+Act as a senior full-stack frontend engineer, educational website architect, responsive UI/UX designer, biology education specialist, interactive 3D developer, WebAR engineer, accessibility specialist, and quality-assurance engineer.
+
+You are working on my EXISTING PROGATI COACHING CENTER SSC Biology website project.
+
+Your task is to carefully inspect, improve, complete, and stabilize the existing project according to every requirement below.
+
+**THIS IS AN EXISTING-PROJECT IMPROVEMENT TASK, NOT A REQUEST TO REBUILD THE WEBSITE FROM SCRATCH.**
+
+Before modifying anything:
+1. Inspect the existing source code, components, assets, routes, chapter data, diagrams, models, animations, dependencies, and project structure.
+2. Identify which features already work, which are incomplete, which are broken, and which are missing.
+3. Preserve all existing working features, valuable content, chapter data, images, diagrams, 3D models, animations, WebAR components, styling, and interactions unless a specific defect requires a correction.
+4. Make targeted, backward-compatible changes.
+5. Do not delete, replace, rename, or overwrite working assets simply to make implementation easier.
+6. Do not regenerate the entire application or replace the existing project with a generic template.
+7. Do not stop after producing an audit report. After the audit, implement the requested improvements in the existing project, subject to the capabilities and limitations of the environment.
+
+If a requested feature already works correctly, preserve it rather than unnecessarily rebuilding it.
+
+If a requirement cannot be completed reliably, explain the exact limitation and implement the best honest, functional alternative without pretending that the feature is complete.
+
+---
+
+## 2. PROJECT IDENTITY AND BRANDING
+
+Official name:
+
+PROGATI COACHING CENTER
+
+Website purpose:
+
+An interactive, Bengali-language SSC Biology learning website for students in Bangladesh.
+
+Design palette:
+- Navy blue
+- White
+- Orange
+
+Use a modern, professional, clean, educational design with consistent spacing, readable typography, attractive chapter cards, subtle animations, clear navigation, and accessible controls.
+
+### CRITICAL BRAND-NAME REQUIREMENT
+
+The text “PROGATI COACHING CENTER” must be one of the most prominent visual elements in the website header.
+
+- On desktop, make the name approximately TWICE AS LARGE as the small header branding in the previous proposed mockup.
+- Use bold, high-contrast, highly readable typography.
+- On mobile, reduce the font size responsively so the entire name fits on ONE SINGLE LINE.
+- Do not wrap the name into two lines on mobile.
+- Do not allow the name to be clipped, truncated, hidden, or covered by navigation icons.
+- Prioritize the brand name over unnecessary header icons and decorative spacing.
+- Use responsive CSS, fluid typography, and appropriate layout adjustments rather than forcing a fixed desktop-sized header on small screens.
+- Test the branding at narrow mobile widths as well as desktop widths.
+
+Do not invent additional coaching-center information, addresses, phone numbers, logos, slogans, QR codes, testimonials, or statistics. Use only information already supplied or existing in the project. Do not invent a new official slogan.
+
+Keep the branding visually prominent without making the rest of the website crowded.
+
+---
+
+## 3. LANGUAGE AND EDUCATIONAL CONTENT
+
+The primary website language must be Bengali.
+
+Requirements:
+- Use clear, natural, student-friendly Bangla.
+- Use accurate NCTB/SSC Biology terminology.
+- Include English scientific terminology alongside Bengali terms where useful.
+- Use bilingual scientific labels in the format: “কোষকেন্দ্র (Nucleus)”.
+- Use correct spelling and consistent terminology throughout the website.
+- Explain difficult concepts using simple Bengali explanations and appropriate examples.
+- Avoid unnecessary English paragraphs in student-facing educational content.
+- Keep English scientific names available for search and scientific identification.
+
+Do not fabricate textbook content, textbook quotations, diagrams, scientific facts, historical exam questions, or citations.
+
+If an official textbook, syllabus, or past examination source is unavailable, state that the relevant information needs verification. Do not falsely claim that the content has been verified.
+
+---
+
+## 4. COMPLETE SSC BIOLOGY CHAPTER STRUCTURE
+
+The website must support all 14 SSC Biology chapters.
+
+Use the existing chapter dataset and routes wherever possible. Audit the existing project against the following content inventory and fill genuine gaps without duplicating existing material.
+
+### Chapter 1: জীবনপাঠ
+Include the relevant textbook topics and learning materials concerning:
+- Bacteria
+- Blue-green algae/cyanobacteria
+- Amoeba
+- Diatoms
+- Fungi
+- Plantae
+- Animalia
+- Biological classification and related textbook concepts
+
+Provide appropriate, scientifically accurate images, labels, explanations, and interactive models where useful.
+
+### Chapter 2: জীবকোষ ও টিস্যু
+Cover:
+- Plant cell and animal cell
+- Cell wall and middle lamella
+- Plasma membrane and fluid mosaic model
+- Mitochondria: outer membrane, inner membrane, cristae, matrix
+- Chloroplast: grana, stroma, lamellae
+- Nucleus and relevant nuclear structures
+- Parenchyma, collenchyma, sclerenchyma
+- Xylem and phloem
+- Epithelial tissue
+- Skeletal/striated, smooth, and cardiac muscle
+- Neuron and relevant tissue structures
+
+Include accurate plant-cell and animal-cell diagrams. If an animal-cell diagram or another expected illustration is missing, add an appropriate verified asset or create a scientifically accurate illustration using the project's existing rendering approach.
+
+### Chapter 3: কোষ বিভাজন
+Cover:
+- Amitosis
+- Mitosis stages
+- Cytokinesis in plant cells, including the cell plate
+- Cytokinesis in animal cells, including the cleavage furrow
+- Meiosis I and Meiosis II
+- Appropriate stage-by-stage diagrams and animations
+
+**Protect the existing mitosis image and its working interactions. Do not remove or accidentally disconnect Chapter 3 images, hotspots, or animations.**
+
+### Chapter 4: জীবনীশক্তি
+Cover:
+- ATP and ADP
+- Photosynthesis
+- Hydrilla oxygen experiment
+- Heat production in germinating chickpeas
+- Cellular respiration and relevant pathways
+- Textbook-specific energy calculations, after verification
+
+Do not insert a fixed ATP total unless it is supported by the applicable textbook or syllabus.
+
+### Chapter 5: খাদ্য, পুষ্টি ও পরিপাক
+Cover:
+- Food and nutrition
+- Food pyramid, where included in the applicable textbook
+- Digestive tract and digestive glands
+- Liver, gallbladder, and pancreas
+- Intestinal villus
+- Tooth cross-section
+- Relevant digestion processes and diagrams
+
+### Chapter 6: জীবে পরিবহন
+Cover:
+- Root-hair water uptake
+- Transpiration and the relevant experiment
+- Red blood cells, white blood cells, and platelets
+- Longitudinal section of the human heart
+- Arteries and veins
+- Sphygmomanometer and related textbook concepts
+
+### Chapter 7: গ্যাসীয় বিনিময়
+Cover:
+- Stomata
+- Human respiratory system
+- Alveolus and capillary gas exchange
+- Relevant breathing and gas-exchange concepts
+
+### Chapter 8: রেচন প্রক্রিয়া
+Cover:
+- Human urinary system
+- Kidney cross-section
+- Nephron structure
+- Relevant filtration, reabsorption, and urine-formation concepts where supported by the textbook
+
+### Chapter 9: দৃঢ়তা প্রদান ও চলন
+Cover:
+- Bone and cartilage
+- Synovial joint
+- Elbow flexion and extension
+- Biceps and triceps
+- Relevant movement and support concepts
+
+### Chapter 10: সমন্বয়
+Cover:
+- Neuron structure
+- Sagittal section of the brain
+- Endocrine gland locations
+- Relevant nervous and hormonal coordination concepts
+
+### Chapter 11: জীবের প্রজনন
+Cover:
+- Ideal flower
+- Pollen germination
+- Pollen tube and male gametes
+- Ovule and embryo sac
+- Sperm and ovum
+- Relevant reproductive processes
+
+### Chapter 12: বংশগতি ও বিবর্তন
+Cover:
+- DNA
+- RNA
+- Chromosome
+- Centromere and chromatids
+- Relevant inheritance and evolution concepts included in the textbook
+
+### Chapter 13: জীবের পরিবেশ
+Cover:
+- Pond ecosystem
+- Producers, consumers, and decomposers
+- Food chain and food web
+- Energy pyramid
+- Relevant ecosystem concepts
+
+### Chapter 14: জীবপ্রযুক্তি
+Cover:
+- Tissue culture
+- Explant, callus, and plantlet
+- Recombinant DNA
+- Plasmid
+- Gene insertion and bacterial cloning
+- Relevant textbook biotechnology concepts
+
+### CONTENT-COMPLETENESS RULE
+
+This list is a planning inventory, not permission to omit other textbook content.
+
+Inspect the existing project and the applicable NCTB textbook/syllabus. Preserve all valid existing topics and add other required topics discovered during the audit.
+
+Organize every chapter into clear, topic-based sections. Each topic should have an appropriate title, explanation, learning resources, and relevant links to diagrams, interactive models, and important questions.
+
+Do not falsely label the website as fully textbook-complete until the coverage has actually been checked.
+
+---
+
+## 5. HOMEPAGE STRUCTURE
+
+Create a polished, modern homepage using this priority order:
+
+1. Prominent PROGATI COACHING CENTER branding.
+2. Global search bar.
+3. Continue Learning section when saved progress exists.
+4. All 14 chapter cards.
+5. Important Biology topics and selected high-priority study material.
+6. Interactive 3D and WebAR Explore section.
+7. Clear navigation to additional learning resources.
+
+The homepage should not be overloaded with every available feature.
+
+Keep detailed question banks, full chapter content, diagram collections, and detailed organelle explanations on their appropriate pages.
+
+### Chapter navigation
+
+Provide BOTH:
+- A visually attractive grid of 14 chapter cards.
+- A responsive chapter sidebar.
+
+The sidebar should be accessible from a mobile menu on narrow screens and should not cover the content permanently.
+
+Each chapter card must open the correct chapter. Use the actual chapter names and data. Do not use placeholder chapter cards that all open the same page.
+
+Clearly indicate the current chapter or selected section where appropriate.
+
+---
+
+## 6. GLOBAL SEARCH SYSTEM
+
+Implement a functional global search system using real data already present in the project.
+
+The search must support both Bengali and English queries.
+
+Searchable content should include:
+- Chapter names and chapter numbers
+- Topic titles
+- Diagram and image titles
+- Scientific names
+- Organ names
+- Cell and organelle names
+- Structures inside organs and cells
+- Available 3D model names
+- Important topics
+- Important questions and their associated chapters
+
+Examples:
+- “কোষ”
+- “মাইটোকন্ড্রিয়া”
+- “Mitochondria”
+- “DNA”
+- “হৃৎপিণ্ড”
+- “Heart”
+- “কোষ বিভাজন”
+- “Mitosis”
+
+Search functionality requirements:
+1. Provide a clearly visible search icon and input.
+2. Show useful live suggestions as the student types.
+3. Support keyboard navigation and touch interaction.
+4. Provide a clear button to reset the query.
+5. Show result titles, result types, relevant chapter names, and short descriptions where available.
+6. Group or distinguish chapters, topics, diagrams, models, and questions.
+7. Clicking a result must open the correct existing destination.
+8. A diagram result must not open an unrelated image.
+9. An organelle result must open its dedicated detail page if implemented, or the closest relevant existing view with an honest indication of any missing detail.
+10. Include a useful no-results state and suggestions for alternative searches.
+11. Handle Bengali Unicode text correctly.
+12. Prevent dropdown clipping and horizontal overflow on mobile.
+13. Ensure the search remains usable with a screen reader, keyboard, touch, and mouse.
+
+Use the existing project data and local search logic. Do not require a database, backend, paid search service, or external search API.
+
+Do not fabricate results for content that does not exist.
+
+---
+
+## 7. DETAILED ORGAN, CELL, AND ORGANELE EXPLORER
+
+This is a core educational feature.
+
+Whenever a student clicks a supported organ, cell, organelle, or meaningful biological structure, open a dedicated detail page or a clearly separate detailed view.
+
+Examples:
+- Plant Cell → Mitochondrion
+- Plant Cell → Chloroplast
+- Plant Cell → Nucleus
+- Human Heart → Relevant heart structure
+- Neuron → Dendrite, cell body, axon, or another supported structure
+- Nephron → Relevant nephron structure
+
+### Every detail page should include, where scientifically applicable:
+- Bengali name
+- English scientific name
+- Accurate labelled diagram or 3D model
+- Location within the larger organ, cell, or organism
+- Main structural components
+- Functions of the whole structure
+- Functions of its internal components
+- How the structure works
+- Relevant biological processes
+- Simple Bengali explanation
+- Important SSC-level facts
+- Related topics and diagrams
+- Link to the parent structure
+- Related important questions
+
+### Example: Mitochondrion
+
+A student selects the mitochondrion in a plant-cell diagram.
+
+Open a dedicated mitochondrion detail page or view containing:
+- Outer membrane
+- Inner membrane
+- Intermembrane space, where appropriate
+- Cristae
+- Matrix
+- Functions of the relevant components
+- Cellular respiration and ATP production
+- A scientifically accurate labelled diagram
+- A rotating/zoomable 3D model if available
+- Related SSC Biology explanations and questions
+
+The internal components should themselves be selectable when the model and implementation genuinely support selection.
+
+Do not create empty detail pages with only a title.
+
+Do not pretend that an ordinary static picture supports clickable substructures. If a static picture cannot safely be modified, preserve it and provide accurate external labels, a legend, or a separate interactive diagram.
+
+### Whole-cell diagram-label rule
+
+For whole-cell diagrams, Bengali labels should appear OUTSIDE the illustration, alongside the existing English labels where practical, with leader lines pointing to the correct structures.
+
+Do not place large Bengali label boxes or markers over the cell itself if they obstruct the structures.
+
+Maintain readable labels, correct leader-line targets, and a clear diagram.
+
+### Scientific accuracy
+
+Do not invent biological structures, functions, or labels.
+
+Use the applicable textbook and reliable scientific references when verifying uncertain details. If a requested detail is outside the SSC syllabus, clearly distinguish it as additional learning material.
+
+---
+
+## 8. INTERACTIVE 3D MODELS
+
+Audit and preserve existing working Three.js or other 3D implementations.
+
+Provide meaningful interactive models for relevant structures wherever feasible.
+
+Supported interaction may include:
+- Rotate
+- Zoom
+- Reset view
+- Toggle labels
+- Select individual structures
+- Display Bengali and English names
+- Display explanations and functions
+- Play, pause, or control relevant animations
+
+For each model:
+1. Use biologically appropriate geometry and assets.
+2. Provide labels that point to the correct structures.
+3. Make selectable parts correspond to actual model geometry or properly implemented interaction regions.
+4. Provide useful touch controls for mobile.
+5. Avoid controls that overlap labels or cover the model.
+6. Optimize rendering for mobile performance.
+7. Handle loading errors and unsupported features gracefully.
+
+If a model is procedural, its appearance must still be biologically meaningful and appropriately labelled.
+
+Do not claim that a model is anatomically complete if it is a simplified educational representation.
+
+Do not replace existing working models with generic or unrelated assets.
+
+---
+
+## 9. WEBAR — MUST REMAIN PART OF THE WEBSITE
+
+WebAR is an important requirement and must not be removed.
+
+Inspect the current implementation, model URLs, marker configuration, camera permissions, and rendering flow.
+
+Correct broken or unrelated model mappings.
+
+### Critical asset-integrity rule
+
+Do not use an astronaut model, unrelated sample model, or generic placeholder as the heart, DNA, neuron, mitochondrion, or any other biological model.
+
+For example, a model URL intended for an astronaut must never be reused as the heart or DNA model.
+
+Do not invent model URLs or assume that an external asset exists.
+
+Use:
+- Verified existing project assets;
+- Valid, appropriately licensed biological model assets; or
+- Newly created scientifically appropriate models supported by the project.
+
+If an appropriate AR asset is unavailable, keep the WebAR interface honest and provide a clear 2D/3D fallback rather than displaying the wrong object.
+
+### WebAR requirements
+
+Where supported by the chosen implementation:
+- Request camera access only after the student initiates the AR experience.
+- Explain why camera permission is needed.
+- Handle denied permissions gracefully.
+- Handle unavailable cameras, unsupported browsers, insecure contexts, and missing assets.
+- Provide useful loading, error, retry, and exit controls.
+- Ensure markers and model scale are appropriate.
+- Make controls touch-friendly.
+- Prevent the AR view from trapping the student in the interface.
+- Provide an easy return to the learning page.
+- Avoid requiring unnecessary personal data or accounts.
+
+Test with actual supported browser/device combinations when the environment permits. Do not claim device testing that has not occurred.
+
+---
+
+## 10. IMPORTANT TOPICS AND SSC EXAM PREPARATION
+
+The website must help students identify important topics and prepare for SSC Biology examinations.
+
+This is a study and revision feature, NOT a request to add a full online examination system.
+
+Do not add timed mock exams, exam dashboards, login-based tests, leaderboards, or backend-based examination management.
+
+### Evidence used to identify important topics
+
+Use the following sources and methods:
+1. The applicable NCTB Biology textbook.
+2. The applicable SSC syllabus and official curriculum requirements.
+3. Verified past SSC examination questions and their year/board where available.
+4. Analysis of question formats and recurring concepts.
+5. Scientific and curricular relevance of the topic.
+
+Use source-backed analysis instead of unsupported guesses.
+
+### Important-topic classifications
+
+Use clearly explained categories such as:
+- অতি গুরুত্বপূর্ণ
+- গুরুত্বপূর্ণ
+- অন্যান্য পাঠ্যবিষয়
+
+Do not imply that lower-priority material can be skipped.
+
+Display why a topic is important when evidence is available. Distinguish textbook relevance from past-question frequency and any editorial judgment.
+
+### Potential questions
+
+Organize questions by chapter and relevant topic.
+
+Support relevant question types, such as:
+- MCQ
+- Short-answer questions
+- Definitions
+- Differences and comparisons
+- Structure and function questions
+- Diagram identification and labelling
+- Creative-question formats used in the applicable SSC curriculum
+
+Only include question formats that are appropriate to the applicable curriculum and examination structure.
+
+Each question should be linked to its actual topic and chapter.
+
+### Past-question integrity
+
+For an actual past question, include its verified year, board, and source where available.
+
+Do not invent years, boards, examination history, or repetition counts.
+
+Clearly label newly written questions as practice questions or possible questions, not actual past examination questions.
+
+Never promise that a question will definitely appear in a future exam.
+
+If past papers are unavailable, do not pretend to have analysed them. Make the content ready for verified question data and clearly disclose the missing evidence.
+
+---
+
+## 11. DEDICATED QUESTION-DETAIL PAGES
+
+When a student clicks a question, open a separate question-detail page or proper routed view.
+
+The page should include the following, depending on the question type:
+
+1. Full question.
+2. Chapter and topic.
+3. Question type.
+4. Importance classification and its evidence where available.
+5. Complete, scientifically correct answer.
+6. Easy Bengali explanation.
+7. Exam-ready sample answer.
+8. Key terms and points to include.
+9. Relevant diagram or illustration when appropriate.
+10. Diagram labels and explanation where applicable.
+11. Writing tips based on the question type and allocated marks when known.
+12. Common mistakes to avoid.
+13. Related concepts and relevant study links.
+14. A clear way to return to the question list or chapter.
+
+### Answer-writing rules
+
+- Keep the exam-ready answer separate from the longer learning explanation.
+- Match answer length to the question type and allocated marks.
+- Do not invent a mark allocation when it is unknown.
+- For applicable creative questions, organize answers using the required ক, খ, গ, ঘ structure.
+- For MCQs, provide the correct option and explain why it is correct.
+- For diagrams, show the correct illustration, accurate labels, and relevant explanation.
+- Use simple, precise, scientifically correct Bengali.
+- Do not encourage memorizing unsupported or misleading model answers.
+
+When the exact mark allocation or official marking scheme is unavailable, state that the sample is a suggested answer format rather than an official marking-scheme answer.
+
+### Navigation
+
+Provide clear controls to:
+- Return to the previous question list
+- Return to the relevant chapter
+- Open related concepts
+- Open related diagrams or interactive models
+
+Avoid unnecessary duplicate pages and broken links.
+
+---
+
+## 12. LEARNING PROGRESS — LOCAL DEVICE ONLY
+
+The student must be able to continue learning from where they previously stopped on the same device.
+
+Requirements:
+- Use local browser storage, such as localStorage, where appropriate.
+- Store the last visited chapter and topic.
+- Optionally record locally completed topics or viewed learning sections.
+- Show a Continue Learning card on the homepage only when valid progress exists.
+- Allow the student to clear local progress.
+- Handle missing, malformed, or outdated stored data safely.
+- Keep the feature lightweight and privacy-conscious.
+
+Strict restrictions:
+- No database.
+- No backend.
+- No login or registration.
+- No student panel.
+- No teacher panel.
+- No cloud synchronization.
+- No unnecessary personal data collection.
+
+Explain through the interface, where appropriate, that progress is saved only on the current browser/device and may disappear if browser data is cleared or the student switches devices.
+
+Do not claim that progress synchronizes across devices.
+
+---
+
+## 13. RESPONSIVE DESIGN AND CROSS-DEVICE COMPATIBILITY
+
+The website must be designed for a wide range of devices:
+- Android phones, including different manufacturers and screen sizes
+- iPhones
+- Tablets
+- Laptops
+- Desktop computers
+
+Support narrow mobile screens, portrait and landscape orientation, touch, mouse, and keyboard input as applicable.
+
+### Requirements
+
+- No horizontal page overflow.
+- No clipped content.
+- No overlapping text or controls.
+- No unreadable Bengali text.
+- No buttons that are too small to use comfortably.
+- No fixed desktop layout that breaks on mobile.
+- No hidden critical content on small screens.
+- No search dropdown extending outside the viewport.
+- No diagram labels that become unreadable on mobile.
+- No AR controls hidden behind device/browser interface elements.
+- Use responsive layouts, flexible widths, suitable aspect ratios, and responsive typography.
+- Preserve clear visual hierarchy and appropriate spacing.
+- Provide useful loading and error states.
+
+### 3D/AR compatibility
+
+Use 3D and WebAR when supported.
+
+When the device, browser, graphics hardware, or camera configuration cannot support a feature, provide the best available 2D diagram, static illustration, explanatory content, or supported non-AR 3D view.
+
+Never make the entire learning page unusable because AR is unavailable.
+
+Do not claim that every phone supports every WebAR implementation.
+
+---
+
+## 14. ACCESSIBILITY, PERFORMANCE, AND RELIABILITY
+
+Implement appropriate:
+- Semantic HTML
+- Keyboard-accessible navigation
+- Visible focus states
+- Accessible names for interactive controls
+- Useful alt text for educational images
+- Sufficient color contrast
+- Screen-reader-friendly search results
+- Touch-friendly interactive targets
+- Loading indicators
+- Error and retry states
+- Empty states
+- Safe handling of unavailable assets
+
+Performance:
+- Lazy-load nonessential images and 3D models where appropriate.
+- Avoid loading every 3D model simultaneously on the homepage.
+- Clean up WebGL/Three.js resources when leaving a view.
+- Avoid unnecessary re-renders and duplicate asset downloads.
+- Optimize image sizes and model complexity without destroying educational clarity.
+- Avoid unnecessary dependencies and paid APIs.
+
+Security and privacy:
+- No collection of unnecessary student information.
+- No secret API keys in frontend code.
+- No unsafe HTML injection.
+- Do not introduce insecure external scripts or unverified dependencies.
+- Keep permissions and external resources limited to what the feature requires.
+
+---
+
+## 15. PRESERVE EXISTING ASSETS AND FIX KNOWN DEFECTS
+
+Perform a targeted audit of the existing project before changing asset references.
+
+Previous project inspection reported the following items that require re-verification in the current source code.
+
+Do not assume that every finding is still current.
+
+### Chapter 2
+- Preserve the existing plant-cell illustration, interactive hotspots, and 3D model if working.
+- Verify whether an animal-cell diagram and relevant plant/animal tissue diagrams exist.
+- Add missing required illustrations without breaking the existing plant-cell implementation.
+
+### Chapter 3
+- Verify the existing mitosis-stage image, its asset path, hotspots, and animation.
+- Preserve the existing mitosis image:
+  `src/assets/images/mitosis_stages_diagram_1793204203016.jpg`
+- Do not delete, overwrite, disconnect, or replace this image if it exists and works.
+- Verify the corresponding chapter data and interaction references.
+- Check whether meiosis illustrations are missing and add appropriate ones if required.
+
+### Other reported gaps to verify
+- Chapter 1: five-kingdom/classification diagram.
+- Chapter 4: ATP/photosynthesis diagrams and relevant experiments.
+- Chapter 5: tooth cross-section.
+- Chapter 6: blood-cell diagrams, transpiration experiment, and heart assets.
+- Chapter 7: respiratory system, alveolus, and stomata diagrams.
+- Chapter 8: urinary system overview and dialysis animation where required.
+- Chapter 9: verify that diagrams point to the correct chapter-specific assets.
+- Chapter 10: brain cross-section and synapse illustrations.
+- Chapter 11: ovule and embryo-sac illustration.
+- Chapter 12: chromosome illustration and relevant genetics diagrams.
+- Chapter 13: verify ecosystem diagrams and eliminate incorrect references.
+- Chapter 14: tissue-culture and recombinant-DNA diagrams.
+
+### Broken or incorrect asset references
+
+Earlier inspection reported that some WebAR models were incorrectly mapped to astronaut GLB assets, including heart and DNA experiences.
+
+Audit all model references and correct any mismatches.
+
+Also inspect any incorrect diagram references, including reported references in Chapters 9 and 13.
+
+Rules:
+- Do not change a reference without checking the actual asset and intended destination.
+- Do not point multiple unrelated structures to the same generic placeholder.
+- Do not generate fictional asset paths.
+- Do not remove Chapter 3 images while fixing unrelated diagrams.
+- Preserve working models, animations, and hotspots.
+- Verify all asset paths and imports after changes.
+- If an asset is missing, use a real valid asset or create an appropriate local implementation.
+- If neither is possible, show a clear fallback instead of a broken image.
+
+This list is an audit checklist, not a declaration that every reported defect is still present.
+
+---
+
+## 16. IMPLEMENTATION ARCHITECTURE AND CHANGE SAFETY
+
+Work within the existing framework and source structure.
+
+Before changing dependencies or build configuration:
+1. Inspect package.json and the actual installed dependencies.
+2. Identify the existing framework, router, styling approach, data files, model renderer, and build system.
+3. Reuse existing utilities and components where appropriate.
+4. Avoid unnecessary framework migrations.
+5. Avoid unnecessary dependency upgrades.
+6. Keep the project structure understandable and maintainable.
+
+Data architecture:
+- Keep chapter, topic, diagram, model, and question metadata in structured local data where appropriate.
+- Use stable identifiers for chapters, topics, diagrams, models, and questions.
+- Use explicit relationships between search results and their destinations.
+- Avoid duplicate sources of truth.
+- Do not add a database or backend.
+- Avoid hardcoding search results that are disconnected from actual learning content.
+
+Routing:
+- Preserve working routes.
+- Add proper destinations for missing detail pages.
+- Support direct navigation to implemented pages.
+- Provide useful fallback handling for unknown routes.
+- Do not allow a search result to open an unrelated destination.
+
+Change management:
+- Make targeted edits.
+- Do not overwrite large source files unnecessarily.
+- Preserve unrelated features.
+- Keep imports and references valid.
+- Check for syntax errors and broken dependencies.
+- Do not delete useful assets to reduce file count.
+- Avoid creating duplicate implementations of features that already work.
+
+---
+
+## 17. VISUAL AND INTERACTION QUALITY
+
+The final interface should look like a thoughtfully designed educational product, not a generic AI-generated template.
+
+Use:
+- Consistent spacing and typography.
+- Clear Bengali text hierarchy.
+- Professional chapter cards.
+- Restrained use of the navy, white, and orange palette.
+- Clear active states.
+- Smooth but lightweight transitions.
+- Appropriate illustrations and educational visualizations.
+- Consistent controls across chapters.
+- Readable layouts for both long explanations and interactive diagrams.
+
+Do not:
+- Overload the homepage.
+- Add excessive decorative gradients or animations.
+- Use random images unrelated to the chapter.
+- Add fake statistics, fake ratings, fake student counts, or fabricated testimonials.
+- Use placeholder text as finished educational content.
+- Make the brand name tiny to accommodate unnecessary icons.
+- hide core learning content behind decorative interactions.
+
+---
+
+## 18. VALIDATION AND TESTING
+
+After implementing the improvements, inspect the actual result rather than merely describing what should work.
+
+Where the environment permits, run the available build, type-check, lint, and other relevant checks.
+
+Check:
+1. Application startup and build status.
+2. All 14 chapter destinations.
+3. Chapter and topic links.
+4. Global search with Bengali and English terms.
+5. Search-result navigation.
+6. Organ and organelle detail-page navigation.
+7. Diagram and model asset references.
+8. Existing Chapter 3 mitosis image and interactions.
+9. Existing working animations.
+10. WebAR asset mappings and error handling.
+11. Continue Learning persistence on the current device.
+12. Mobile header branding and its one-line rule.
+13. Responsive navigation and chapter sidebar.
+14. No horizontal overflow at narrow mobile widths.
+15. Question-detail navigation and answer rendering.
+16. Loading, missing-asset, and unsupported-feature fallbacks.
+
+Use available browser/device previews if present.
+
+Do not claim that a test passed unless it was actually run. Distinguish:
+- Verified working
+- Implemented but not tested
+- Blocked by unavailable assets, APIs, or environment limitations
+
+If an automated test fails, investigate and correct the relevant defect before declaring the task complete.
+
+Do not delete existing functionality simply to make a test pass.
+
+---
+
+## 19. REQUIRED FINAL DELIVERABLE
+
+Complete the implementation in the existing project to the extent supported by the available environment.
+
+At the end, provide a concise but informative report containing:
+
+1. What was inspected.
+2. What was preserved.
+3. What was actually implemented.
+4. Which chapters and content areas were completed or improved.
+5. Which diagrams, models, and animations were added or repaired.
+6. Whether global search works and which content it searches.
+7. Whether organ/organelle detail pages work.
+8. Whether question-detail pages and answer-writing guidance work.
+9. Whether local learning progress works.
+10. What was verified about mobile responsiveness.
+11. What was verified about WebAR and its fallback behavior.
+12. Build/test results.
+13. Any remaining incomplete features, missing source material, or limitations.
+
+Do not mark a feature complete merely because a button or heading exists.
+
+Do not mark the whole textbook complete unless the chapter coverage has actually been verified.
+
+Do not claim WebAR works on every device.
+
+Do not claim past-paper analysis is complete if the source papers were unavailable.
+
+If a requirement cannot be finished in the current session, explain precisely what remains and why.
+
+---
+
+## 20. FINAL NON-NEGOTIABLE RULES
+
+- Modify the EXISTING project.
+- Do not rebuild from scratch.
+- Preserve working code, data, images, diagrams, models, animations, hotspots, and routes.
+- Protect the existing Chapter 3 mitosis image and its references.
+- Keep PROGATI COACHING CENTER very prominent.
+- Desktop branding must be approximately twice the previous small header mockup size.
+- Mobile branding must remain on ONE LINE while staying readable.
+- Keep all 14 chapters.
+- Organize chapters by topic.
+- Provide global Bengali/English search.
+- Provide genuine organ/organelle detail views.
+- Keep WebAR and use biologically correct assets.
+- Provide 2D fallbacks for unsupported 3D/AR experiences.
+- Provide evidence-based important-topic and potential-question sections.
+- Provide dedicated question-detail pages with explanatory and exam-ready answers.
+- Save reading progress locally on the current device only.
+- No database, backend, login, student panel, teacher panel, or full examination system.
+- No fabricated past-paper history, sources, scientific facts, or guaranteed exam predictions.
+- No invented business information.
+- No fake interactive functionality.
+- No broken asset references.
+- No unnecessary destructive changes.
+- No claims of testing that was not performed.
+
+**Start by auditing the existing project, then implement the requested improvements safely, and finally report the actual results and remaining limitations.**
